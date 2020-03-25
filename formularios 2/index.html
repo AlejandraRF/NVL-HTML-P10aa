@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de formularios 2</title>
+</head>
+<body>
+    <h1>Encuesta de satisfacción compra de camiseta</h1>
+    <p>Nos gustaría conocer su opinión acerca de nuestros productos, así como su experiencia comprando en nuestra tienda </p>
+    <form method="post" action="miservidor.php">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text">
+        </div>
+        <!--Nombre apellido-->
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input id="apellido" type="text">
+
+        </div>
+        <!--Nombre código postall-->
+        <div>
+            <label for="cp">Código postal:</label>
+            <input id="cp" type="text">
+        </div>
+        <!--Correo electrónico-->
+        <div>
+            <label for="mail">Correo electrónico:</label>
+            <input id="mail" type="text">
+        </div>
+        <!--Nombre puntos positivos del producto-->
+        <div>
+            <label for="positivo">Qué es lo que más le ha gustado de nuestro producto </label>
+             <textarea id="positivo"></textarea>
+        </div>
+        <!--Nomnbre puntos negativos del producto-->
+        <div>
+            <label for="negativo">Negativo:</label>
+            <textarea id="negativo"></textarea>
+        </div>
+        <!--nombre valoración del producto-->
+        <div>
+            <label for="valoración">del 1 al 5, ¿cómo valoraría nuestro producto? </label>
+            <select id="valoración">
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select>
+        </div>
+        <!--Nombre encuesta-->
+        <p>No solo nos interesa conocer su opinión sobre nuestros productos, también es importante saber cómo de útil es nuestra atención al cliente</p>
+        <div>
+            <label for="calidad">Califica la calidad de nuestra marca</label>
+            <select id="calidad">
+                <option value="Excelente">Excelente</option>
+                <option value="Buena">Buena</option>
+                <option value="Regular">Regular</option>
+                <option value="Pésima">Pésima</option>
+
+            </select>
+            <div>
+                <label for="instalaciones">Califique nuestras instalaciones</label>
+                <select id="instalaciones">
+                    <option value="Excelente">Excelente</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Pésima">Pésima</option>
+                </select>
+            </div>
+                <div>
+                    <label for="ateción">Cómo calificaría la atención al cliente por parte de nuestros comerciantes</label>
+                    <select id="atención">
+                        <option value="Excelente">Excelente</option>
+                        <option value="Buena">Buena</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Pésima">Pésima</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="experiencia">Califique su experiencia</label>
+                    <select id="experiencia">
+                        <option value="Excelente">Excelente</option>
+                        <option value="Buena">Buena</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Pésima">Pésima</option>
+                    </select>
+                </div>
+                 <div>
+                     <input type="submit" value="Enviar">
+
+    <!--Otra manera muy util de realizar las encuestas de calidad es elaborar listas mediante las etiquetas <ul> y <li> en lugar de <div>-->
+                 
+    </form>
+</body>
+</html>
